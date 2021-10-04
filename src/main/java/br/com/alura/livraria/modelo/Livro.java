@@ -13,11 +13,10 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Autor {
+public class Livro {
 	
-	
-	private String nome;
-	private String email;
-	private LocalDate dataNascimento;
-	private String miniCurriculo;
+	private String titulo;
+	private LocalDate dataLancamento;
+	private int paginas;
+	private Autor autor;
 }

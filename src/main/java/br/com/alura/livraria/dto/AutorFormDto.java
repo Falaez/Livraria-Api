@@ -1,23 +1,24 @@
-package br.com.alura.livraria.modelo;
+package br.com.alura.livraria.dto;
 
 import java.time.LocalDate;
 
-import lombok.AllArgsConstructor;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Past;
+
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-public class Autor {
+public class AutorFormDto {
 	
-	
+	@NotBlank
 	private String nome;
+	@NotBlank
 	private String email;
+
+	@Past
 	private LocalDate dataNascimento;
+	@NotBlank
 	private String miniCurriculo;
 }
