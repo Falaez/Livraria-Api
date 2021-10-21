@@ -1,0 +1,1 @@
+alter table autores change mini_cv mini_curriculo varchar(255) not null;

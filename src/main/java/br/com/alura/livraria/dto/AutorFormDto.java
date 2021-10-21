@@ -23,6 +23,7 @@ public class AutorFormDto {
 	@JsonAlias("data_nascimento")
 	private LocalDate dataNascimento;
 	@NotBlank
-	@JsonAlias("mini_cv")
 	private String miniCurriculo;
+	
+
 }
