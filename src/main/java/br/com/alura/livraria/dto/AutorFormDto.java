@@ -5,6 +5,8 @@ import java.time.LocalDate;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,7 +20,9 @@ public class AutorFormDto {
 	private String email;
 
 	@Past
+	@JsonAlias("data_nascimento")
 	private LocalDate dataNascimento;
 	@NotBlank
+	@JsonAlias("mini_cv")
 	private String miniCurriculo;
 }
