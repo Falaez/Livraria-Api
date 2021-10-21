@@ -9,7 +9,6 @@ import javax.validation.constraints.PastOrPresent;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 
-import br.com.alura.livraria.modelo.Autor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,5 +27,6 @@ public class LivrosFormDto {
 	private int paginas;
 	
 	@NotNull
-	private Autor autor;
+	@JsonAlias("autor_id")
+	private Long autorId;
 }
