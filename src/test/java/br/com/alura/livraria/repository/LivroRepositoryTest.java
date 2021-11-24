@@ -63,10 +63,10 @@ class LivroRepositoryTest {
 		Assertions.assertThat(relatorio).hasSize(5).extracting(QuantidadeLivrosDto::getAutor, QuantidadeLivrosDto::getQuantidadeDeLivros,
 				QuantidadeLivrosDto::getPercentual).
 		containsExactlyInAnyOrder(
-				Assertions.tuple("Andre Silva", 2l,28.6),
+				Assertions.tuple("Andre da Silva", 2l,28.6),
 				Assertions.tuple("Fernanda Nogueira",2L,28.6),
-				Assertions.tuple("Juliana Camargo",1L,14.3),
+				Assertions.tuple("Juliana Carvalho",1L,14.3),
 				Assertions.tuple("Rita de Assis",1L,14.3),
-				Assertions.tuple("Rodrigo Souza",1L,14.3));
+				Assertions.tuple("Rodrigo de Souza",1L,14.3));
 	}
 	}
