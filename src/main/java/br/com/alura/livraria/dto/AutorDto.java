@@ -1,5 +1,7 @@
 package br.com.alura.livraria.dto;
 
+import java.time.LocalDate;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,5 +11,8 @@ public class AutorDto {
 	
 	private Long id;
 	private String nome;
+	private String email;
+	private LocalDate dataNascimento;
+	private String miniCurriculo;
 	
 }
